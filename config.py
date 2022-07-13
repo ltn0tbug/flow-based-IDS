@@ -50,7 +50,6 @@ class Config():
     self.model_config = ModelConfig()
     self.model_config.feature_size = self.feature_size
     self.model_config.out_size = self.out_size
-    self.model_config.seq_length = self.out_size
     self.model_config.device = self.device
 
     self.train_config = TrainConfig()
@@ -59,8 +58,6 @@ class Config():
     self.train_config.n_layer =  self.model_config.n_layer
     self.train_config.hidd_size1 = self.model_config.hidd_size1
 
-    self.path_to_train = "NF_ToN_IoT_Dataset.train.csv"
-    self.path_to_test = "NF_ToN_IoT_Dataset.test.csv"
     self.root_checkpoint_dir = "./checkpoint/"
 
     self.version = "RNN_DNN_v1.0"
