@@ -25,7 +25,5 @@ vscode@Ubuntu:~/project/flow-based-IDS$ source .env/bin/activate
 ```
 - Response
 ```
-{
-  "predict0": 0.13789403438568115
-}
+[0.1379]
 ```

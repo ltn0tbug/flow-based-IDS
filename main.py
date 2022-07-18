@@ -7,4 +7,4 @@ app = Flask(__name__)
 def Predict():
     content = request.get_json(force=True)
     predict = GetPredict(content)
-    return {f"predict{i}":pred for i, pred in enumerate(predict)}
+    return str([float("{0:.4f}".format(pred)) for pred in predict])
